@@ -1,0 +1,121 @@
+:root {
+  --cinza: #aaa;
+  --vermelha: #e93d50;
+  --vermelha-escura: #af303f;
+  --branca: #fff;
+  --luz: rgb(229, 255, 0);
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.teclado {
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.tecla {
+  background-color: var(--branca);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--cinza);
+  color: var(--vermelha);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--vermelha);
+  border: 4px solid  var(--vermelha);
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+.tecla_pom{
+  background-image: url("../images/jovenstitans.gif");
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tecla_clap{
+  background-image: url(../images/cosmo-padrinhos-magicos.gif);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tecla_tim{
+  background-image: url(../images/gifs-de-scooby-doo-9.gif);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tecla_puff{
+  background-image: url(../images/chipstop-tom-and-jerry.gif);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tecla_splash{ 
+  background-image: url(../images/heatblast.gif);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tecla_toim{
+  background-image: url(../images/gifs-de-steven-universe-0.gif);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tecla_psh{
+  background-image: url(../images/obrigado-amigo-pica-pau.gif);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tecla_tic{
+  background-image: url(../images/4tr3.gif);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tecla_tom{
+  background-image: url(../images/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f325f48554a4b6c6a6e31317558773d3d2d313031323931383839302e313635623762363530386233313465373337393632383930393539392e676966.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
