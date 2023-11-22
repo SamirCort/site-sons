@@ -1,12 +1,19 @@
-function tocaSonJovensTitas(){
-    
-document.querySelector('#som_tecla_pom').play();
-
+function tocaSom(idElemento){
+      document.querySelector(idElemento).play()
 }
-document.querySelector('#som_tecla_pom').pay;
 
-document.querySelector('.tecla_pom').onclick=tocaSonJovensTitas;
+let contador = 0;
+const listaDeTeclas = document.querySelectorAll('.tecla')
 
+while (contador < listaDeTeclas.length){
 
-function tocaSonSoo
-
+    const Instrumento = listaDeTeclas[contador].classList
+    console.log(Instrumento)
+    listaDeTeclas[contador].onclick = function (){
+    
+        tocaSom(`#som_${Instrumento}`);
+    }
+    
+    
+    contador = contador + 1;
+}
